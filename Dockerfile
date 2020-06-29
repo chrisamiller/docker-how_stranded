@@ -20,6 +20,6 @@ RUN pip3 install git+https://github.com/betsig/how_are_we_stranded_here.git
 ##########
 #Kallisto#
 ##########
-RUN mkdir /opt/kallisto && cd /opt/kallisto && \
+RUN cd /opt/ && \
     wget https://github.com/pachterlab/kallisto/releases/download/v0.46.1/kallisto_linux-v0.46.1.tar.gz && \
-    tar -xzvf kallisto_linux-v0.46.1.tar.gz && ln -s /opt/kallisto/kallisto_linux-v0.46.1/kallisto /usr/bin/kallisto
+    tar -xzvf kallisto_linux-v0.46.1.tar.gz && ln -s /opt/kallisto/kallisto /usr/bin/kallisto
